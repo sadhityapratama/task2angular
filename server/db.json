@@ -1,0 +1,96 @@
+{
+  "kontak": [
+    {
+      "id": 1,
+      "name": "Murphy",
+      "phone": "25565115",
+      "skill": "Angular Developer",
+      "notes": "he has quality to build angular application"
+    },
+    {
+      "id": 2,
+      "name": "Eddie",
+      "phone": "25565115",
+      "skill": "Devops Engineer",
+      "notes": "he has quality to maintain production environment"
+    },
+    {
+      "id": 3,
+      "name": "Ruud van",
+      "phone": "25565115",
+      "skill": "UX Designer",
+      "notes": "he has quality to create excelent UX"
+    },
+    {
+      "id": 4,
+      "name": "Eusebio",
+      "phone": "25565115",
+      "skill": "Angular Developer",
+      "notes": "he has quality to build angular application"
+    },
+    {
+      "id": 5,
+      "name": "Venom",
+      "phone": "25565115",
+      "skill": "Java Developer",
+      "notes": "he has quality to build java application"
+    },
+    {
+      "id": 6,
+      "name": "Richard",
+      "phone": "25565115",
+      "skill": "React Developer",
+      "notes": "he has quality to build react application"
+    },
+    {
+      "id": 7,
+      "name": "Giovanny",
+      "phone": "25565115",
+      "skill": "Jongkok",
+      "notes": "beli kue di pasar"
+    },
+    {
+      "name": "stupid",
+      "phone": "08123091",
+      "skill": "eeveeee",
+      "notes": "mengapa ku yang harus slalu mengalah",
+      "id": 8
+    },
+    {
+      "name": "stupid",
+      "phone": "08123091",
+      "skill": "eeveeee",
+      "notes": "mengapa ku yang harus slalu mengalah",
+      "id": 9
+    },
+    {
+      "name": "stupid",
+      "phone": "08123091",
+      "skill": "eeveeee",
+      "notes": "mengapa ku yang harus slalu mengalah",
+      "id": 10
+    },
+    {
+      "name": "stupid",
+      "phone": "08123091",
+      "skill": "eeveeee",
+      "notes": "mengapa ku yang harus slalu mengalah",
+      "id": 11
+    },
+    {
+      "name": "stupid",
+      "phone": "08123091",
+      "skill": "eeveeee",
+      "notes": "mengapa ku yang harus slalu mengalah",
+      "id": 13
+    },
+    {
+      "name": "qweqwe",
+      "phone": "12312312",
+      "skill": "awdawd",
+      "notes": "aawdawdaw",
+      "id": 14
+    }
+  ],
+  "test": []
+}

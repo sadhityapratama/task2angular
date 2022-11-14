@@ -1,0 +1,60 @@
+<!-- <div *ngIf="kontakDetail; else second">
+    
+    <h2>{{kontakDetail.name | uppercase}}</h2>
+    <button type="button" (click)="goBack()">back to previous page</button>
+  </div>
+  <ng-template #second>No Data</ng-template> -->
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row mt-5" *ngIf="kontakDetail; else second">
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-between">
+                        <div class="title">
+                            <h3>Detail Contacts</h3>
+                        </div>
+                        <button type="button" class="btn btn-primary" (click)="goBack()">back to previous page</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <p>Name :</p>
+                </div>
+                <div class="col-10">
+                    <p>{{kontakDetail.name}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <p>Category :</p>
+                </div>
+                <div class="col-10">
+                    <p>{{kontakDetail.skill}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <p>Notes :</p>
+                </div>
+                <div class="col-10">
+                    <p>{{kontakDetail.notes}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-danger" (click)="onDelete()">Delete Contact</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ng-template #second>
+        <div class="row">
+            <div class="col">
+                <h1>No Data Found!</h1>
+            </div>
+        </div>
+    </ng-template>
+</div>

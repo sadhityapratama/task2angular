@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row mt-3" *ngIf="kontakToChild.length > 0; else second">
+        <div class="col-4" *ngFor="let kontak of kontakToChild">
+            <div class="card-column">
+                <div class="card mt-3"  >
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                      <h5 class="card-title">{{kontak.name | uppercase}}</h5>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error esse fugit quod tempore</p>
+                      <div><p class="card-text">{{kontak.phone | phone}}</p></div>
+                      <a routerLink="/detail/{{kontak.id}}" >View Profile</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <ng-template #second>
+        <div class="row">
+            <div class="col">
+                <h1>No Data Found!</h1>
+            </div>
+        </div>
+    </ng-template>
+</div>

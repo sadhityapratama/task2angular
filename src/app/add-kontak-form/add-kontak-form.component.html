@@ -1,0 +1,44 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row mt-5">
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-between">
+                        <div class="title">
+                            <h3>Add Contact Form</h3>
+                        </div>
+                        <button type="button" class="btn btn-primary" (click)="goBack()">back to previous page</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+                <div class="mb-3">
+                  <label for="exampleInputName" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" required [(ngModel)]="modelKontak.name" name="name" #name="ngModel">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPhone" class="form-label">Phone</label>
+                    <input type="text" maxlength="8" class="form-control" id="exampleInputPhone" aria-describedby="phoneHelp" required [(ngModel)]="modelKontak.phone" name="phone" #phone="ngModel">
+                    <div id="phoneHelp" class="form-text">We'll never share your phone with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputCategory" class="form-label">Category</label>
+                    <input type="text" class="form-control" id="exampleInputCategory" aria-describedby="categoryHelp" required [(ngModel)]="modelKontak.skill" name="skill" #skill="ngModel">
+                    <div id="categoryHelp" class="form-text">Your Skill (Angular, Spring boot, etc)</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputNotes" class="form-label">Notes</label>
+                    <input type="text" class="form-control" id="exampleInputNotes" aria-describedby="notesHelp" required [(ngModel)]="modelKontak.notes" name="notes" #notes="ngModel">
+                    <div id="notesHelp" class="form-text">Description</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </div>
+</div>
